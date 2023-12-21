@@ -18,13 +18,14 @@ function generateToken(id, email, userType) {
 }
 
 class UserController {
-    async addUser(req, res) {
+        async addUser(req, res) {
         try {
             let dtUser = req.body;
             const nama = dtUser.nama;
             const email = dtUser.email;
             let pass = dtUser.kata_sandi;
             const passConfirm = dtUser.konfirmasi_sandi;
+            const keamanan = dtUser.keamanan;
 
             const cekUser = await UserModel.getUserByEmail(email);
             const cekAdmin = await UserModel.getAdminByEmail(email);
@@ -35,7 +36,7 @@ class UserController {
 
             else {
                 const hashPass = bcrypt.hashSync(pass, saltRounds);
-                await UserModel.addUser(nama, email, hashPass);
+                await UserModel.addUser(nama, email, hashPass, keamanan);
                 res.status(201).json({ message: 'Berhasil Register, Silakan Login!' })
             }
         } catch (error) {
