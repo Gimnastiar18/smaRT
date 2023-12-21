@@ -16,7 +16,7 @@ const RegisterForm = () => {
     kata_sandi: '',
     konfirmasi_sandi: '',
     setuju: '',
-    pertanyaan_keamanan: '',
+    keamanan: '',
   })
 
   const handleChange = (e) => {
@@ -81,11 +81,11 @@ const RegisterForm = () => {
     }
 
     // Validate Pertanyaan Keamanan
-    if (formData.pertanyaan_keamanan.trim() === '') {
-      newErrors.pertanyaan_keamanan = 'Pertanyaan keamanan harus diisi';
+    if (formData.keamanan.trim() === '') {
+      newErrors.keamanan = 'Pertanyaan keamanan harus diisi';
       isValid = false;
     } else {
-      newErrors.pertanyaan_keamanan = '';
+      newErrors.keamanan = '';
     }
 
     setErrors(newErrors);
@@ -99,6 +99,7 @@ const RegisterForm = () => {
     if (await validateForm()) {
       try {
         const response = await axios.post('http://localhost:3000/register', formData);
+        navigate('/login');
         console.log('Success:', response.data);
         setShowSuccessPopup(true);
       } catch (error) {
@@ -168,19 +169,19 @@ const RegisterForm = () => {
             </div>
 
             <div>
-              <label htmlFor="pertanyaan_keamanan" className="bold-label">Pertanyaan Keamanan</label>
+              <label htmlFor="keamanan" className="bold-label">Pertanyaan Keamanan</label>
               <input
-                name="pertanyaan_keamanan"
+                name="keamanan"
                 type="text"
                 className="form-control"
-                value={formData.pertanyaan_keamanan}
+                value={formData.keamanan}
                 placeholder="Karakter Favoritmu saat Kecil"
                 onChange={handleChange}
               />
               {/* Display Pertanyaan Keamanan validation error */}
-              {errors.pertanyaan_keamanan && (
+              {errors.keamanan && (
                 <div className="text-danger" style={{ fontSize: '12px', marginTop: '5px' }}>
-                  {errors.pertanyaan_keamanan}
+                  {errors.keamanan}
                 </div>
               )}
             </div>
