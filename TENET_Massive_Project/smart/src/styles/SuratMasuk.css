@@ -1,0 +1,31 @@
+.cover--surat {
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.list--surat {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list--masuk {
+  padding: 0px 20px;
+  align-items: center;
+}
+
+.masuk--detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn--buat {
+  font-size: 14px;
+  padding: 6px 20px;
+  background: #f4d160;
+  border-radius: 6px;
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+.table-container {
+    height: 83vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-right: 2rem;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(165, 166, 166);
+    box-shadow: inset 0 0 5px rgb(20, 20, 20);
+
+}

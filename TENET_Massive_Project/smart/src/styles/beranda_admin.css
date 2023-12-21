@@ -1,0 +1,60 @@
+.dashboard {
+    min-width: min-content;
+}
+
+
+.black-h1 {
+    color: black;
+    font-weight: bold;
+
+}
+
+
+.wellcomes {
+    padding-left: 8rem;
+    align-items: center;
+    background-color: var(--color-lightblue);
+    height: 10rem;
+}
+
+.content {
+    gap: 2rem;
+}
+
+.content-beranda-admin h2 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.container-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-lightblue);
+    padding: 3rem;
+    padding-left: 5rem;
+    border-radius: 10px;
+    border-radius: 1rem;
+    min-width: min-content;
+    height: 15rem;
+}
+
+.icon-surat-masuk {
+    height: 11rem;
+}
+
+.iconArsip {
+    margin-left: 2.5rem;
+}
+
+.container-content button {
+    align-self: end;
+    color: black;
+    background-color: var(--color-khaki);
+    height: 3rem;
+    width: 10.5rem;
+    font-size: 20px;
+    border-radius: 0.5rem;
+    border: var(--color-khaki);
+
+}

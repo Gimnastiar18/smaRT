@@ -1,0 +1,53 @@
+.cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bg--profil {
+  width: 40%;
+  background: #75C2F6;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 5px 8px rgba(26, 26, 26, 0.363);
+}
+
+
+
+.user--data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.user--data2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.user--data2 label {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.data--cover {
+  background: #fff;
+  padding: 8px;
+  width: 250px;
+  border-radius: 8px;
+  border: solid 1px #c0c0c0;
+}
+
+.btn--ubah {
+  font-size: 14px;
+  padding: 6px 10px;
+  margin-top: 20px;
+  background: #F4D160;
+  border-radius: 6px;
+  cursor: pointer;
+}

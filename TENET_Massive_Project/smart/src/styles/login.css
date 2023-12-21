@@ -1,0 +1,124 @@
+:root {
+    /* Colors */
+    --color-white: #fff;
+    --color-khaki: #f4d160;
+    --color-black: #000;
+    --color-steelblue: #1d5d9b;
+    --color-gray: #7e7e7e;
+
+}
+
+.cntn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginform {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    background: var(--color-khaki);
+    border-radius: 7px;
+    padding: 30px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
+}
+
+.logo-file {
+    height: 20rem;
+}
+
+.logosmart {
+    width: 90px;
+    height: auto;
+}
+
+.blue-h1 {
+    color: var(--color-steelblue);
+    font-weight: bold;
+}
+
+.lupasandi a {
+    font-weight: bold;
+    margin: 10px;
+    margin-left: 0;
+    color: var(--color-steelblue);
+
+}
+
+.btn-msk button {
+    background-color: var(--color-steelblue);
+    color: white;
+}
+
+.btn-msk button:hover {
+    background-color: #75C2F6;
+    border: #000 1px solid;
+}
+
+.buat-akun a:hover,
+.lupasandi a:hover {
+    color: #75C2F6
+}
+
+
+.buat-akun {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+}
+
+.buat-akun p {
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 1rem;
+}
+
+.buat-akun a {
+    color: var(--color-steelblue);
+    margin-left: 5px;
+}
+
+span {
+    color: var(--color-steelblue);
+}
+
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+
+.line p {
+    margin: 1px;
+    color: #000;
+}
+
+hr {
+    flex: 1;
+    color: var(--color-black);
+    border-width: 5px;
+}
+
+.btn-google button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #fff;
+    color: #1d5d9b;
+}
+
+.btn-google button:hover {
+    background-color: #75C2F6;
+    border: 1px solid var(--color-steelblue);
+}
+.icon {
+    font-size: 1.5rem;
+    justify-self: center;
+    margin: 1px;
+}
+

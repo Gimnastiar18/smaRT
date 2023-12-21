@@ -1,0 +1,36 @@
+.cover--arsip {
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.list--arsip {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.list--detail {
+  padding: 0px 20px;
+  align-items: center;
+}
+
+.arsip--detail {
+  display: flex;
+  align-items: center;
+}
+
+.button--lihat {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn--lihat {
+  font-size: 14px;
+  padding: 6px 20px;
+  background: #f4d160;
+  border-radius: 6px;
+  cursor: pointer;
+}

@@ -1,0 +1,60 @@
+
+
+.content--detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 80vh;
+}
+
+.status--surat {
+  border: 1px solid #000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.detail-status {
+  display: flex;
+  /* align-items: center; */
+  /* float: left; */
+  text-align: start;
+  max-width: 300px;
+}
+
+.detail-status ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pratinjau--surat {
+  border: 1px solid #000;
+  padding: 70px 170px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.btn--detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn--detail .btn {
+  font-size: 14px;
+  padding: 8px 14px;
+  margin-top: 10px;
+  background: #f4d160;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn--detail .btn:hover {
+  border: 1px solid #1d5d9b;
+  color: #1d5d9b;
+  transition: 0.5s ease-in-out;
+}

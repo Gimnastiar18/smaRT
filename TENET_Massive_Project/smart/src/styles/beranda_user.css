@@ -1,0 +1,102 @@
+:root {
+    /* Colors */
+    --color-white: #fff;
+    --color-khaki: #f4d160;
+    --color-black: #000;
+    --color-steelblue: #1d5d9b;
+    --color-gray: #7e7e7e;
+
+}
+
+.dashboard {
+    min-width: min-content;
+}
+
+
+.wellcome {
+    align-items: flex-start;
+    background-color: var(--color-khaki);
+    padding: 1.5rem;
+    padding-left: 3rem;
+}
+
+.wellcome h2 {
+    font-weight: 500;
+    margin: 0;
+}
+
+.content {
+    margin-right: 70px;
+    margin-left: 70px;
+}
+
+.card-list {
+    padding: 30px;
+    background-color: var(--color-lightblue);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border-radius: 1rem;
+    min-width: min-content;
+
+}
+
+.card-container {
+    justify-content: space-around;
+    margin-bottom: 20px;
+    gap: 40px;
+    margin-left: 20px;
+    margin-right: 150px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-radius: 20px;
+    height: 180px;
+    min-width: min-content;
+    padding: 2rem;
+    text-align: center;
+
+}
+
+.card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    gap: 0.5rem;
+
+}
+
+.card :hover {
+    color: var(--color-steelblue);
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.icon-file {
+    height: 6rem;
+}
+
+.icon-jam {
+    height: 7rem;
+    width: 9.5rem;
+}
+
+.button-container button {
+    color: black;
+    background-color: var(--color-khaki);
+    height: 3rem;
+    width: 10.5rem;
+    font-size: 20px;
+    border-radius: 0.5rem;
+    border: var(--color-khaki);
+}

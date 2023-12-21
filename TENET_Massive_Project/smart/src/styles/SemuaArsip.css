@@ -1,0 +1,41 @@
+.cover--semuaArsip {
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.list--semuaArsip {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.list--semua {
+  padding: 0px 20px;
+  align-items: center;
+}
+
+.semuaArsip--detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn--selesai {
+  font-size: 14px;
+  padding: 6px 20px;
+  background: #fff;
+  color: #75C2F6;
+  border: 2px solid #75C2F6;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn--edit {
+  font-size: 14px;
+  padding: 6px 20px;
+  background: #f4d160;
+  border-radius: 6px;
+  cursor: pointer;
+}
