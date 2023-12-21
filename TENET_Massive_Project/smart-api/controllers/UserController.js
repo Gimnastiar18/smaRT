@@ -18,7 +18,7 @@ function generateToken(id, email, userType) {
 }
 
 class UserController {
-        async addUser(req, res) {
+    async addUser(req, res) {
         try {
             let dtUser = req.body;
             const nama = dtUser.nama;
