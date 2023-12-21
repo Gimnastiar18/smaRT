@@ -13,9 +13,9 @@ class UserModel {
         });
     }
 
-    addUser(nama, email, hashPass) {
+    addUser(nama, email, hashPass, keamanan) {
         return new Promise((resolve, reject) => {
-            connection.query('INSERT INTO table_user(nama, email, kata_sandi) VALUES(?, ?, ?) ', [nama, email, hashPass], (err, results) => {
+            connection.query('INSERT INTO table_user(nama, email, kata_sandi, keamanan) VALUES(?, ?, ?, ?) ', [nama, email, hashPass, keamanan], (err, results) => {
                 if (err) {
                     reject(err);
                 } else {
